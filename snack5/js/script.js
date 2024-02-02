@@ -15,7 +15,9 @@ if (!isNaN(numberChoice) && numberChoice > 0) {
         // creo variabile per il cubo
         let cubo = i ** 3;
         // Stampa il cubo dei primi N numeri
-        document.getElementById("cube-result").innerHTML = `Il cubo di ${i} è: ${cubo}`;
+        let string_attuale=document.getElementById("cube-result").innerHTML;
+        
+        document.getElementById("cube-result").innerHTML = string_attuale +  `<br>Il cubo di ${i} è: ${cubo}`;
         console.log(`Il cubo di ${i} è: ${cubo}`);
     }
 } else {
