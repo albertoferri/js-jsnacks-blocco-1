@@ -5,25 +5,20 @@
 // Stampa a schermo il contenuto dell'array
 
 // Crea un array vuoto.
-const userArray = [];
+let userArray = [];
+console.log(userArray);
 
 // Chiedi per 6 volte all’utente di inserire un numero,
+for (let i = 0; i < 6; i++){
+    // inserisco un prompt da ripetere e lo strasformo subito in numero
+    let userChoice = Number( prompt("Inserisci un numero"));
 
-
-for (let i = 1; i <= 6; i++){
-    // inserisco un prompt da ripetere 
-    let userChoice = prompt("Inserisci un numero");
-
+    // verifico se il numero è dispari
     // Solo se è dispari inseriscilo nell’array.
-    if (userChoice % 2 !== 0){
-
-        userArray.push(userChoice)
-
-        console.log(userChoice)
+    if (userChoice % 2 !== 0) {
+        userArray.push(userChoice);
     }
-
-     
-    // userArray.push( Number(prompt("Inserisci un numero")) );
-
 }
-console.log(userArray);
+
+// Stampa a schermo il contenuto dell'array
+document.getElementById("oddArray").innerHTML = `Numeri dispari inseriti: ${userArray}`;
