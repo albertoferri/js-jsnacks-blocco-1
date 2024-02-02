@@ -12,8 +12,10 @@ if (!isNaN(numberChoice) && numberChoice > 0) {
     // Calcola e stampa il cubo dei primi N numeri attribuiendo al valore la variabile i che andra ad aggiurnarsi per il numero di volte
     for (let i = 1; i <= numberChoice; i++) {
 
-        // Stampa il cubo dei primi N numeri,
+        // creo variabile per il cubo
         let cubo = i ** 3;
+        // Stampa il cubo dei primi N numeri
+        document.getElementById("cube-result").innerHTML = `Il cubo di ${i} è: ${cubo}`;
         console.log(`Il cubo di ${i} è: ${cubo}`);
     }
 } else {
