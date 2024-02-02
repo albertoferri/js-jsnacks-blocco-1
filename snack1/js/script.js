@@ -18,3 +18,8 @@ if (firstWord.length > secondWord.length){
 } else {
     document.getElementById("2nd-span").innerHTML = secondWord;
 }
+if (firstWord.length == secondWord.length){
+    document.getElementById("1st-span").innerHTML = firstWord;
+} else {
+    document.getElementById("2nd-span").innerHTML = secondWord;
+}
