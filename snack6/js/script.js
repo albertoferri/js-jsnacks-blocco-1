@@ -10,6 +10,16 @@ let somma = 0;
 for (let i = 0; i < numbers.length; i++) {
     somma += numbers[i];
 }
+
+// stampo in pagina l'array
+document.getElementById("array").innerHTML = "Questo è l'array dei numeri scelti: " + numbers;
+
+
 // stampo in pagina la somma
-document.getElementById("result").innerHTML = "Questa è la somma dei primi dieci numeri: " + somma;
-console.log(somma)
+document.getElementById("somma").innerHTML = "Questa è la somma dei primi dieci numeri: " + somma;
+
+// Calcola la media
+let media = somma / numbers.length;
+
+// stampo in pagina la media
+document.getElementById("media").innerHTML = "Questa è la media dei primi dieci numeri: " + media;
