@@ -25,3 +25,8 @@ if (!isNaN(userNumber)) {
     // messaggio di errore
     alert("Inserisci un numero valido.");
 }
+
+// ricarica la pagina al clic
+function refreshPage() {
+    location.reload();
+}
