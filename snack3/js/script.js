@@ -11,8 +11,7 @@ console.log(userArray);
 // Chiedi per 6 volte all’utente di inserire un numero,
 for (let i = 0; i < 8; i++){
     // inserisco un prompt da ripetere e lo strasformo subito in numero
-    // let userChoice = Number( prompt("Inserisci un numero"));
-    let userChoice = 177;
+    let userChoice = Number( prompt("Inserisci un numero"));
 
     // verifico se il numero è dispari
     // Solo se è dispari inseriscilo nell’array.

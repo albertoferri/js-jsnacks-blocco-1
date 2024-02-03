@@ -9,8 +9,7 @@ let somma = 0;
 // utilizzo un ciclo for per chiedere 10 volte all'utente di mettere un numero
 for (let i = 1; i <= 10; i++){
     // prompt utente
-    // let userInput = Number(prompt("Inserisci un numero"));
-    let userInput = 10;
+    let userInput = Number(prompt("Inserisci un numero"));
     
     // Converto l'input dell'utente in un numero e lo aggiunge alla somma
     somma += parseFloat(userInput);
